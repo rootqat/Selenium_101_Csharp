@@ -32,10 +32,6 @@ namespace ParallelLTSelenium
             capabilities.SetCapability("accessKey", accesskey);
         }
 
-
-
-
-
         [DataTestMethod]
         [DataRow("chrome", "latest", "Windows 10","Scenario01")]
         [DataRow("firefox", "latest", "Windows 10","Scenario01")]
@@ -85,8 +81,8 @@ namespace ParallelLTSelenium
         }
 
         [DataTestMethod]
-        [DataRow("chrome", "latest", "Windows 10", "Scenario01")]
-        [DataRow("firefox", "latest", "Windows 10", "Scenario01")]
+        [DataRow("chrome", "latest", "Windows 10", "Scenario02")]
+        [DataRow("firefox", "latest", "Windows 10", "Scenario02")]
 
 
         [TestMethod]
@@ -132,10 +128,9 @@ namespace ParallelLTSelenium
         }
 
 
-
         [DataTestMethod]
-        [DataRow("chrome", "latest", "Windows 10", "Scenario01")]
-        [DataRow("firefox", "latest", "Windows 10", "Scenario01")]
+        [DataRow("chrome", "latest", "Windows 10", "Scenario03")]
+        [DataRow("firefox", "latest", "Windows 10", "Scenario03")]
 
 
         [TestMethod]
@@ -225,8 +220,6 @@ namespace ParallelLTSelenium
                 Console.WriteLine("Success message is not properly appear.");
             }
         }
-
-
 
         [TestCleanup]
         public void Cleanup()
